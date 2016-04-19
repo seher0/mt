@@ -1,0 +1,60 @@
+{
+  "id": "9e2e4968-dfbd-482e-bb2b-65125d5bc3fd",
+  "name": "prescription",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "data": [
+        {
+          "text": "Order prescription medicine"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "Order medicine"
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "I want medicines for my prescription"
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "How to order medicine"
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "You deliver medicine"
+        }
+      ],
+      "isTemplate": false
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "prescription",
+      "affectedContexts": [],
+      "parameters": [],
+      "speech": []
+    }
+  ],
+  "state": "LEARNED",
+  "priority": 500000,
+  "webhookUsed": false
+}

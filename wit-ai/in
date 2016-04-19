@@ -1,0 +1,101 @@
+[ {
+  "id" : "70692be7-c6b9-4cfc-980c-97d5ca301990",
+  "name" : "order_status",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "recharge", "bills", "grocery" ]
+  }
+}, {
+  "id" : "2ca25fc1-9625-4b1f-a10f-10f6b4787a6d",
+  "name" : "cancel",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "recharge", "food", "bills", "beauty", "grocery", "start" ]
+  }
+}, {
+  "id" : "43d9264e-49c4-4f93-ad7b-16ab97802100",
+  "name" : "change_operator",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "recharge" ]
+  }
+}, {
+  "id" : "c9e0f10a-f23d-446d-8251-2468d6129982",
+  "name" : "show_plans",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "recharge" ]
+  }
+}, {
+  "id" : "fb7680e6-b21c-4806-9c43-96747b8ae298",
+  "name" : "grocery",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "grocery", "start" ]
+  }
+}, {
+  "id" : "f26927c4-f31e-410d-b05c-fe0ef05e8ecb",
+  "name" : "change_pincode",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "food", "prescription", "beauty", "grocery" ]
+  }
+}, {
+  "id" : "56814f85-2151-425d-93a3-97ac82f04e38",
+  "name" : "support",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "start" ]
+  },
+  "forked_from" : {
+    "intentid" : "ddccf523-1047-4498-8892-0850f4246253",
+    "intentname" : "st_dxp_provide_support",
+    "instancename" : "Instance b261-4c5",
+    "username" : "MayMaria"
+  }
+}, {
+  "id" : "64d9a2aa-4e96-498e-bf27-c2edcdb7d469",
+  "name" : "beauty",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "beauty", "start" ]
+  }
+}, {
+  "id" : "f585db8b-5712-4a15-851b-8431b9127385",
+  "name" : "food",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "food", "start" ]
+  }
+}, {
+  "id" : "69c2fcda-f127-415d-9b02-fa3d5f1b873f",
+  "name" : "prescription",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "prescription", "start" ]
+  }
+}, {
+  "id" : "e9102a0f-538d-4a8a-abb3-b7da2ea06b7e",
+  "name" : "recharge",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "recharge", "start" ]
+  }
+}, {
+  "id" : "56813613-e216-45db-aea2-01b65f547869",
+  "name" : "unknown",
+  "doc" : "",
+  "forked_from" : {
+    "intentid" : "8b771054-d56e-48e1-91ed-2e884d6ab139",
+    "intentname" : "UNKNOWN",
+    "instancename" : "Jarvis",
+    "username" : "jhbao"
+  }
+}, {
+  "id" : "a4310244-603e-470e-ac8b-55788bd4cc0f",
+  "name" : "bills",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "bills", "start" ]
+  }
+} ]

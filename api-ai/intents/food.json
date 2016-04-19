@@ -1,0 +1,205 @@
+{
+  "id": "95cbb221-4264-4223-808b-18362a747342",
+  "name": "food",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "data": [
+        {
+          "text": "Order "
+        },
+        {
+          "text": "food",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "Something to eat"
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "food",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "want to order "
+        },
+        {
+          "text": "lunch",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "want to order "
+        },
+        {
+          "text": "dinner",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "how to order "
+        },
+        {
+          "text": "food",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "Show me menu"
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "How to see menu"
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "What can i eat"
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "lunch",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "dinner",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "I want see "
+        },
+        {
+          "text": "food",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        },
+        {
+          "text": " options"
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "How do I order "
+        },
+        {
+          "text": "food",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "What can I do to order "
+        },
+        {
+          "text": "food",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "Do you deliver "
+        },
+        {
+          "text": "food",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "food",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@things_to_buy",
+          "name": "things_to_buy",
+          "value": "$things_to_buy"
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "state": "LEARNED",
+  "priority": 500000,
+  "webhookUsed": false
+}

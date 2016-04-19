@@ -1,0 +1,45 @@
+{
+  "id": "cb1d796c-d07f-4eee-9fc3-fafc9219f789",
+  "name": "pratyush_intro",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "data": [
+        {
+          "text": "Who is "
+        },
+        {
+          "text": "Pratyush Prasanna",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "Who is "
+        },
+        {
+          "text": "Pratyush",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "speech": "Entrepreneur, Harley rider, Sith Lord"
+    }
+  ],
+  "state": "LEARNED",
+  "priority": 500000,
+  "webhookUsed": false
+}

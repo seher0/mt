@@ -1,0 +1,97 @@
+{
+  "id": "2fa7034a-a52c-4702-9cca-406250ab2b17",
+  "name": "buy",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "data": [
+        {
+          "text": "buy @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "show @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "I am looking for a @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "Browse for @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "Need to buy a new @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "I want to order @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "Can I order @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "want to buy @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "I want to buy @things_to_buy:things_to_buy"
+        }
+      ],
+      "isTemplate": true
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "buy",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "name": "things_to_buy",
+          "value": "$things_to_buy"
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "state": "LEARNED",
+  "priority": 500000,
+  "webhookUsed": false
+}

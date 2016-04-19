@@ -1,0 +1,923 @@
+{
+  "id" : "e9102a0f-538d-4a8a-abb3-b7da2ea06b7e",
+  "name" : "recharge",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "recharge", "start" ]
+  },
+  "entities" : [ {
+    "id" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+    "name" : "phone_number",
+    "builtin" : true,
+    "role" : null
+  }, {
+    "id" : "535a8110-2ea7-414f-a024-cf928b076d17",
+    "name" : "amount_of_money",
+    "builtin" : true,
+    "role" : null
+  }, {
+    "id" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+    "name" : "contact",
+    "builtin" : true,
+    "role" : null
+  }, {
+    "id" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+    "name" : "recharge_type",
+    "builtin" : false,
+    "role" : null
+  } ],
+  "expressions" : [ {
+    "body" : "Bill of Rs.836",
+    "id" : "5704c642-8326-4546-ab4b-d83aea5e0b0b",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 11,
+      "end" : 14,
+      "value" : "836"
+    } ]
+  }, {
+    "body" : "bill of Rs.10",
+    "id" : "5704c608-386a-4a82-b401-acd8aeb8946d",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 11,
+      "end" : 13,
+      "value" : "10"
+    } ]
+  }, {
+    "body" : "Rs.671.47",
+    "id" : "5704c1a6-c293-4707-a96c-ee1c1deb279a",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 3,
+      "end" : 9,
+      "value" : "671.47"
+    } ]
+  }, {
+    "body" : "You can do it for 50",
+    "id" : "56e8eea2-169a-4ad4-8dfd-d65180d7bd75",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 18,
+      "end" : 20,
+      "value" : "50"
+    } ]
+  }, {
+    "body" : "Do it for 50",
+    "id" : "56e8ee9a-b026-4a3f-b947-677d0bcd212e",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 10,
+      "end" : 12,
+      "value" : "50"
+    } ]
+  }, {
+    "body" : "Ok. Do it for Rs 50",
+    "id" : "56e8ee94-1e94-470d-b3ea-0d82c9c9ef58",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 17,
+      "end" : 19,
+      "value" : "50"
+    } ]
+  }, {
+    "body" : "pay my mobile postpaid bill",
+    "id" : "568223b9-993b-4d6c-8f76-25ce93a84df3",
+    "entities" : [ {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "value" : "postpaid"
+    }, {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 14,
+      "end" : 22,
+      "value" : "postpaid"
+    } ]
+  }, {
+    "body" : "recharge 8140309414 50rs.",
+    "id" : "56d6890e-e3e7-412e-9a48-a480797ea70d",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 9,
+      "end" : 19,
+      "value" : "8140309414"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 20,
+      "end" : 22,
+      "value" : "50"
+    } ]
+  }, {
+    "body" : "How to recharge mobile phone",
+    "id" : "56c6cac1-930a-456c-8dca-96f91ba9fb24"
+  }, {
+    "body" : "How recharge",
+    "id" : "56c6caae-c20c-4a21-a9f3-e9fc5f9a0136"
+  }, {
+    "body" : "mobile number 9416233314",
+    "id" : "567a3731-e911-40bd-8fbd-72d7646f21f4",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 14,
+      "end" : 24,
+      "value" : "9416233314"
+    } ]
+  }, {
+    "body" : "how Do you recharge",
+    "id" : "56c6c687-5f44-41dd-8515-f9ca85a9562e"
+  }, {
+    "body" : "rechag",
+    "id" : "56c6be55-324c-46a1-ad4a-9c211e44cd69"
+  }, {
+    "body" : "recharg",
+    "id" : "56c6be49-d503-4c9a-bb61-8686410a2191"
+  }, {
+    "body" : "rechage",
+    "id" : "568e0ff5-beaf-417e-bc51-adec67b9e95a"
+  }, {
+    "body" : "pay my phone bill",
+    "id" : "569dd05f-0c7c-4199-847c-6ddfe861451c",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 4,
+      "end" : 12,
+      "value" : "my phone"
+    } ]
+  }, {
+    "body" : "How to recharge phone",
+    "id" : "56c6b842-2ef5-45dc-bceb-d609fde7fb6c"
+  }, {
+    "body" : "mobile phone recharge",
+    "id" : "56c16da0-c0fb-4c47-b95d-fdc238926f95"
+  }, {
+    "body" : "recharge for 10 rs",
+    "id" : "56817c0e-ccd3-4808-ac31-308838c0c8f5",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 13,
+      "end" : 16,
+      "value" : "10"
+    } ]
+  }, {
+    "body" : "125.00",
+    "id" : "56bc5ef1-860d-40fb-94a0-e5f42013a136",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 6,
+      "value" : "125.00"
+    } ]
+  }, {
+    "body" : "100.00",
+    "id" : "56bc5e23-cdbb-41c4-a81a-9395d284efee",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 6,
+      "value" : "100.00"
+    } ]
+  }, {
+    "body" : "Recharge my number for 100rs",
+    "id" : "56976d5d-67c2-44b0-bdc9-82ba247557b6",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 23,
+      "end" : 28,
+      "value" : "100rs"
+    } ]
+  }, {
+    "body" : "Recharge my number with 100rs",
+    "id" : "56976e09-0697-4678-9835-d7f6e2d799c8",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 24,
+      "end" : 27,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "Recharge my number for 100.00",
+    "id" : "56bc5d42-8731-4a4b-b2e6-ce3d4774ba3e",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 23,
+      "end" : 29,
+      "value" : "100.00"
+    } ]
+  }, {
+    "body" : "My number",
+    "id" : "568e105f-bc8d-478b-a50f-ec3a48607218",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 0,
+      "end" : 2,
+      "value" : "My"
+    } ]
+  }, {
+    "body" : "Recharge my number for 100",
+    "id" : "569787f0-8590-4a5b-94ae-d5e3dafc5dd9",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 23,
+      "end" : 26,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "my phone",
+    "id" : "567aa3f7-b4d7-44d3-9db2-75f323d4d2cf",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 0,
+      "end" : 2,
+      "value" : "my"
+    } ]
+  }, {
+    "body" : "I need to recharge my phone",
+    "id" : "56af065d-0871-4290-8bf9-e719e96643c3",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 19,
+      "end" : 21,
+      "value" : "my"
+    } ]
+  }, {
+    "body" : "I need to recharge phone",
+    "id" : "56af0691-4be7-4096-8b86-c747111fa52d"
+  }, {
+    "body" : "my phone for rs 10",
+    "id" : "567b9dc4-f06b-42f4-828b-a397d6d605a1",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 0,
+      "end" : 2,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 16,
+      "end" : 18,
+      "value" : "10"
+    } ]
+  }, {
+    "body" : "recharge my phone for rs 10",
+    "id" : "567bc3bd-e102-4413-b169-5be22e2c4176",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 25,
+      "end" : 27,
+      "value" : "10"
+    } ]
+  }, {
+    "body" : "recharge my phone for 10 rs",
+    "id" : "567ba2db-8393-4dbe-93e7-54232eee59ec",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 22,
+      "end" : 24,
+      "value" : "10"
+    } ]
+  }, {
+    "body" : "pay my mobile bill",
+    "id" : "569758e7-f3ff-4d97-b5c8-b15a79cf8c2e",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 4,
+      "end" : 6,
+      "value" : "my"
+    }, {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 14,
+      "end" : 18,
+      "value" : "postpaid"
+    } ]
+  }, {
+    "body" : "Rs 9",
+    "id" : "56b83b81-99d3-446c-a213-79b03b089c28",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 3,
+      "end" : 4,
+      "value" : "9"
+    } ]
+  }, {
+    "body" : "200 rs",
+    "id" : "567a802f-f36c-4542-b12d-01ea47993d87",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 3,
+      "value" : "200"
+    } ]
+  }, {
+    "body" : "10rs",
+    "id" : "567a8dcc-5a4c-4cbc-bab9-20fd888f2c2b",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 2,
+      "value" : "10"
+    } ]
+  }, {
+    "body" : "rs 200",
+    "id" : "567a8301-a851-4429-9d78-abdf4a5784d5",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 3,
+      "end" : 6,
+      "value" : "200"
+    } ]
+  }, {
+    "body" : "Recharge with Rs100/-",
+    "id" : "56976e48-b886-413f-8c2b-84b6e3124d46",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 16,
+      "end" : 19,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "9912312312 for Rs 50",
+    "id" : "56976f00-15b9-47a7-b41d-647d8a787bd1",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 0,
+      "end" : 10,
+      "value" : "9912312312"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 18,
+      "end" : 20,
+      "value" : "50"
+    } ]
+  }, {
+    "body" : "my number",
+    "id" : "567adc6b-a18a-4348-bf91-80d9d4460e31",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 0,
+      "end" : 2,
+      "value" : "my"
+    } ]
+  }, {
+    "body" : "recharge my phone for rs 250",
+    "id" : "567b983f-3961-46be-9eca-c53cd1b30b61",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 25,
+      "end" : 28,
+      "value" : "250"
+    } ]
+  }, {
+    "body" : "recharge for rs. 91, reliance gsm",
+    "id" : "567bbccf-f02a-4493-a5d4-cd2e6a3b9e9e",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 17,
+      "end" : 19,
+      "value" : "91"
+    } ]
+  }, {
+    "body" : "recharge for rs. 49, airtel",
+    "id" : "567bc018-d029-4552-9a51-657349a2198f",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 17,
+      "end" : 19,
+      "value" : "49"
+    } ]
+  }, {
+    "body" : "recharge for rs. 500, reliance gsm",
+    "id" : "567bbc81-3e30-4e7a-8bed-ac6f4f84918b",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 17,
+      "end" : 20,
+      "value" : "500"
+    } ]
+  }, {
+    "body" : "Rs.50",
+    "id" : "56b323b0-a18b-4f15-8961-2ab156d4cda1",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 3,
+      "end" : 5,
+      "value" : "50"
+    } ]
+  }, {
+    "body" : "recharge phone",
+    "id" : "5672cb73-d725-4aa9-8906-d06c2603a667"
+  }, {
+    "body" : "my phone 150",
+    "id" : "567b9d37-e680-4a6d-9431-72f8fa71f29c",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 0,
+      "end" : 2,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 9,
+      "end" : 12,
+      "value" : "150"
+    } ]
+  }, {
+    "body" : "pay my postpaid bill",
+    "id" : "568177a2-a764-4e9c-9a00-7bf321dc5817",
+    "entities" : [ {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 7,
+      "end" : 15,
+      "value" : "postpaid"
+    }, {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 4,
+      "end" : 6,
+      "value" : "my"
+    } ]
+  }, {
+    "body" : "RC my number ",
+    "id" : "569cd973-84f1-4839-88dc-f20ba93569a0",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 3,
+      "end" : 5,
+      "value" : "my"
+    } ]
+  }, {
+    "body" : "919912312312",
+    "id" : "56976fdf-d4a7-4836-aa6d-c38ec870ca4c",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 2,
+      "end" : 12,
+      "value" : "9912312312"
+    } ]
+  }, {
+    "body" : "Phone number 9912312398",
+    "id" : "56976fbb-b5a3-4b54-b2c8-b968099d7eb3",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 13,
+      "end" : 23,
+      "value" : "9912312398"
+    } ]
+  }, {
+    "body" : "100rs recharge for 9912312233",
+    "id" : "56976f55-e762-4086-be29-fbb4c548a34b",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 19,
+      "end" : 29,
+      "value" : "9912312233"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 3,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "100.",
+    "id" : "568e0c3f-a4ba-466a-ac03-5831d9c3326b",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 3,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "Can I get Rs 200 recharge for 9912312345",
+    "id" : "568e0df2-0645-4f4d-806b-1c464d7878a5",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 13,
+      "end" : 17,
+      "value" : "200"
+    }, {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 30,
+      "end" : 40,
+      "value" : "9912312345"
+    } ]
+  }, {
+    "body" : "1000",
+    "id" : "56810e19-7009-476c-84cd-ab65a16a1cd7",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 4,
+      "value" : "1000"
+    } ]
+  }, {
+    "body" : "I need recharge for Rs 100/-.",
+    "id" : "568e0d90-7550-4458-b4e0-6bb3fcec3748",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 23,
+      "end" : 26,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "I need recharge for 100",
+    "id" : "568e0d85-c8b2-45a1-9a3b-d0b560b276ee",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 20,
+      "end" : 23,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "amount 300",
+    "id" : "568e0d53-dcc9-44a0-9fea-ab8b9074e786",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 7,
+      "end" : 10,
+      "value" : "300"
+    } ]
+  }, {
+    "body" : "rs.100",
+    "id" : "568e0684-2a03-4740-b2c7-b7a5549f00ec",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 3,
+      "end" : 6,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "Rs. 100",
+    "id" : "568e064c-8eda-4f38-9f20-fe037a3e7907",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 4,
+      "end" : 7,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "8861234567",
+    "id" : "568e02b7-02e4-456d-b7b9-247a156aa82c",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 0,
+      "end" : 10,
+      "value" : "8861234567"
+    } ]
+  }, {
+    "body" : "9740197428",
+    "id" : "568e0055-ccb1-4f5a-9724-dda09fe01bbf",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 0,
+      "end" : 10,
+      "value" : "9740197428"
+    } ]
+  }, {
+    "body" : "9900513764",
+    "id" : "56823bb2-d1eb-4315-9231-00cdea04a0c3",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 0,
+      "end" : 10,
+      "value" : "9900513764"
+    } ]
+  }, {
+    "body" : "9620269379 rs100",
+    "id" : "568d114e-1fc8-4a30-bd47-4ff13305bbf0",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 0,
+      "end" : 10,
+      "value" : "9620269379"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 13,
+      "end" : 16,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "9620269379 100",
+    "id" : "568cac59-a875-4e3b-89d2-374b1956a198",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 0,
+      "end" : 10,
+      "value" : "9620269379"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 11,
+      "end" : 14,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "recharge my phone for 40 rs",
+    "id" : "567aa492-4567-4cde-b041-a55ec859bee8",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 22,
+      "end" : 24,
+      "value" : "40"
+    } ]
+  }, {
+    "body" : "change to special",
+    "id" : "56817b85-0c32-4226-bd51-a0d2da196155",
+    "entities" : [ {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 10,
+      "end" : 17,
+      "value" : "special"
+    } ]
+  }, {
+    "body" : "special recharge",
+    "id" : "56817bf7-e468-4309-bcc6-6a547efcb7e2",
+    "entities" : [ {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 0,
+      "end" : 7,
+      "value" : "special"
+    } ]
+  }, {
+    "body" : "recharge for rs 49, special recharge",
+    "id" : "56817c02-9074-40d2-8b9c-f957d535f8fe",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 16,
+      "end" : 18,
+      "value" : "49"
+    }, {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 20,
+      "end" : 27,
+      "value" : "special"
+    } ]
+  }, {
+    "body" : "change to prepaid",
+    "id" : "56817837-fdf5-4721-9611-35b9daada328",
+    "entities" : [ {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 10,
+      "end" : 17,
+      "value" : "prepaid"
+    } ]
+  }, {
+    "body" : "pay postpaid bill",
+    "id" : "56817789-6193-49f9-bedf-824136ac6dd9",
+    "entities" : [ {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 4,
+      "end" : 12,
+      "value" : "postpaid"
+    } ]
+  }, {
+    "body" : "amount is rs 100",
+    "id" : "568175ab-ef52-46e1-8e7f-ad5557ecee87",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 13,
+      "end" : 16,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "phone 9991370666",
+    "id" : "567a9fa5-e734-4a28-a06f-f44ad8982781",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 6,
+      "end" : 16,
+      "value" : "9991370666"
+    } ]
+  }, {
+    "body" : "i can help you recharge",
+    "id" : "567a9604-c776-47fa-9cd0-02924837dffa"
+  }, {
+    "body" : "it is postpaid",
+    "id" : "56814ed8-1313-4e12-934a-ab10f876b39f",
+    "entities" : [ {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 6,
+      "end" : 14,
+      "value" : "postpaid"
+    } ]
+  }, {
+    "body" : "recharge postpaid 9991370444",
+    "id" : "568145ed-5636-4e68-af03-59c484d38624",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 18,
+      "end" : 28,
+      "value" : "9991370444"
+    }, {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 9,
+      "end" : 17,
+      "value" : "postpaid"
+    } ]
+  }, {
+    "body" : "recharge prepaid",
+    "id" : "568145ba-e2dd-4848-ada1-086f438bcf0b",
+    "entities" : [ {
+      "wisp" : "568145e0-f9ab-4988-a277-e2fa4cc04e8f",
+      "start" : 9,
+      "end" : 16,
+      "value" : "prepaid"
+    } ]
+  }, {
+    "body" : "100",
+    "id" : "567a7fa2-dba1-44b0-ae26-5dd1157782af",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 3,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "100 rs",
+    "id" : "567a7fc3-1732-40e0-aaf0-d182da69cfcb",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 6,
+      "value" : 100
+    } ]
+  }, {
+    "body" : "500",
+    "id" : "567a80b8-a587-488a-b32d-2549880a23e2",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 3,
+      "value" : "500"
+    } ]
+  }, {
+    "body" : "mobile number 9991370444",
+    "id" : "567a7f5d-1f42-48f4-9ee6-e8dc6ea250db",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 14,
+      "end" : 24,
+      "value" : {
+        "value" : "9991370444"
+      }
+    } ]
+  }, {
+    "body" : "mobile 9991370444",
+    "id" : "567a7cf6-7f69-452c-b53b-7ad36d2a1807",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 7,
+      "end" : 17,
+      "value" : {
+        "value" : "9991370444"
+      }
+    } ]
+  }, {
+    "body" : "9686562625",
+    "id" : "567a7f85-ed6d-479a-aa35-a0863cb9e422",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 0,
+      "end" : 10,
+      "value" : {
+        "value" : "9686562625"
+      }
+    } ]
+  }, {
+    "body" : "rs 100",
+    "id" : "567a7f9b-7eab-4c3a-a031-13bce5fec1c4",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 6,
+      "value" : 100
+    } ]
+  }, {
+    "body" : "200",
+    "id" : "567a7f8a-fac0-437d-87fe-6504ac3abd26",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 3,
+      "value" : "200"
+    } ]
+  }, {
+    "body" : "mobile number 8845671290",
+    "id" : "567a4ccd-4db1-401e-b513-358aeaf937a1",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 14,
+      "end" : 24,
+      "value" : {
+        "value" : "8845671290"
+      }
+    } ]
+  }, {
+    "body" : "number is 9991370666",
+    "id" : "567a6d29-c74f-49de-a50f-af3b2331c711",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 10,
+      "end" : 20,
+      "value" : {
+        "value" : "9991370666"
+      }
+    } ]
+  }, {
+    "body" : "for rs 10",
+    "id" : "567a6d6d-014b-4392-af67-b8d118c2415f",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 4,
+      "end" : 9,
+      "value" : 10
+    } ]
+  }, {
+    "body" : "recharge my phone",
+    "id" : "567a4199-1cf4-4fa1-a235-74c899cdffc5",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    } ]
+  }, {
+    "body" : "for amount 250",
+    "id" : "567a6bf2-6287-42c1-a4c4-e5fa7c594799",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 11,
+      "end" : 14,
+      "value" : "250"
+    } ]
+  }, {
+    "body" : "recharge my phone for 100 rs",
+    "id" : "567a6c56-012e-4191-a5d7-05dc375f0ab2",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    }, {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 22,
+      "end" : 25,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "for 10 rs",
+    "id" : "567a6c14-a435-4d11-844c-1f41b69da051",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 4,
+      "end" : 6,
+      "value" : "10"
+    } ]
+  }, {
+    "body" : "recharge phone 9991370444",
+    "id" : "567a370d-07ff-495f-ad65-17a3cc66ff42",
+    "entities" : [ {
+      "wisp" : "535a810c-3885-41fe-a36f-3adfff96d72c",
+      "start" : 15,
+      "end" : 25,
+      "value" : "9991370444"
+    } ]
+  }, {
+    "body" : "Recharge my phone",
+    "id" : "5672cb73-495f-4327-a5ff-08cf681918ad",
+    "entities" : [ {
+      "wisp" : "535a8111-9b01-4678-80ae-53a22ef0bf5b",
+      "start" : 9,
+      "end" : 11,
+      "value" : "my"
+    } ]
+  } ]
+}

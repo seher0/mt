@@ -1,0 +1,44 @@
+{
+  "id": "5d92f392-e882-41b4-ba83-fb9c5acd9616",
+  "name": "manual",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "data": [
+        {
+          "text": "Please connect me to an agent"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "please connect me to an opertor"
+        }
+      ],
+      "isTemplate": true
+    },
+    {
+      "data": [
+        {
+          "text": "talk to humans"
+        }
+      ],
+      "isTemplate": true
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "manual",
+      "affectedContexts": [],
+      "parameters": [],
+      "speech": []
+    }
+  ],
+  "state": "LEARNED",
+  "priority": 500000,
+  "webhookUsed": false
+}

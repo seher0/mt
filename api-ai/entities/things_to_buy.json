@@ -1,0 +1,78 @@
+{
+  "id": "67138fc6-7d95-4641-aa03-9636ecdd7779",
+  "name": "things_to_buy",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "grocery",
+      "synonyms": [
+        "grocery",
+        "groceries",
+        "aata",
+        "maggie",
+        "noddle",
+        "mustard oil",
+        "maggi",
+        "noodles",
+        "rice",
+        "fruits",
+        "vegetables",
+        "pickle",
+        "spices",
+        "face wash",
+        "face pack",
+        "Dal",
+        "Flour",
+        "besan",
+        "soya flour",
+        "maida",
+        "sugar"
+      ]
+    },
+    {
+      "value": "food",
+      "synonyms": [
+        "food",
+        "chicken biryani",
+        "dinner",
+        "lunch",
+        "rolls"
+      ]
+    },
+    {
+      "value": "mobile",
+      "synonyms": [
+        "mobile",
+        "phone",
+        "mobiles",
+        "smartphone",
+        "phones",
+        "smartphones"
+      ]
+    },
+    {
+      "value": "watch",
+      "synonyms": [
+        "watch",
+        "watches"
+      ]
+    },
+    {
+      "value": "laptop",
+      "synonyms": [
+        "laptop",
+        "computer",
+        "laptops"
+      ]
+    },
+    {
+      "value": "camera",
+      "synonyms": [
+        "camera",
+        "digital camera"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

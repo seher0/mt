@@ -1,0 +1,87 @@
+{
+  "id": "8485abeb-1da4-4d12-802a-98fc16f0a784",
+  "name": "grocery",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "data": [
+        {
+          "text": "Order "
+        },
+        {
+          "text": "grocery",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "buy "
+        },
+        {
+          "text": "grocery",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "order "
+        },
+        {
+          "text": "grocery",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "How to order "
+        },
+        {
+          "text": "grocery",
+          "alias": "things_to_buy",
+          "meta": "@things_to_buy",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false
+    },
+    {
+      "data": [
+        {
+          "text": "Show me the list to buy grocery"
+        }
+      ],
+      "isTemplate": false
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "grocery",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@things_to_buy",
+          "name": "things_to_buy",
+          "value": "$things_to_buy"
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "state": "LEARNED",
+  "priority": 500000,
+  "webhookUsed": false
+}

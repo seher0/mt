@@ -1,0 +1,58 @@
+{
+  "id" : "f585db8b-5712-4a15-851b-8431b9127385",
+  "name" : "food",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "food", "start" ]
+  },
+  "entities" : [ ],
+  "expressions" : [ {
+    "body" : "food",
+    "id" : "568df344-8f4d-4fc3-8008-36749f1d0a5c"
+  }, {
+    "body" : "what can I eat",
+    "id" : "570b93b0-387e-45b6-b41c-a15c63d168b6"
+  }, {
+    "body" : "breakfast",
+    "id" : "570b93a4-8390-432f-b9db-368156c3dc98"
+  }, {
+    "body" : "dinner",
+    "id" : "570b93a0-52f7-4d0b-988d-fd49e3739d7e"
+  }, {
+    "body" : "lunch",
+    "id" : "56d165af-f2cc-46cf-875a-03c6da05918d"
+  }, {
+    "body" : "What can I do to order food",
+    "id" : "570b939b-c564-47a4-956b-8ac13b608c90"
+  }, {
+    "body" : "Do you deliver food",
+    "id" : "570b9390-1544-4dce-a200-2212bcf6a3c5"
+  }, {
+    "body" : "I want to see food options",
+    "id" : "570b9387-7076-4283-a551-d175ffab236b"
+  }, {
+    "body" : "Show me food menu",
+    "id" : "570b937e-419a-428a-bdf4-8d6190e89fc7"
+  }, {
+    "body" : "How to order food",
+    "id" : "570b9373-75b7-4c25-980a-30308c93029b"
+  }, {
+    "body" : "want to order dinner",
+    "id" : "570b9368-cd89-45f8-9537-06a6008902e6"
+  }, {
+    "body" : "want to order lunch",
+    "id" : "570b8fc3-b2ed-4d8c-a4db-2f164262cc2b"
+  }, {
+    "body" : "something to eat",
+    "id" : "570b8fb9-cb15-49e7-af2d-f9ecc4a0712e"
+  }, {
+    "body" : "buy food",
+    "id" : "56d433a9-43e8-4393-ba72-690a233af4c4"
+  }, {
+    "body" : "get food",
+    "id" : "56e94bf1-dece-496c-90d6-04c3ec2615e0"
+  }, {
+    "body" : "Order food",
+    "id" : "56e942d5-03ac-458c-a966-0d1f38c641b9"
+  } ]
+}

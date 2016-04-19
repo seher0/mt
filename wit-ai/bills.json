@@ -1,0 +1,528 @@
+{
+  "id" : "a4310244-603e-470e-ac8b-55788bd4cc0f",
+  "name" : "bills",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "bills", "start" ]
+  },
+  "entities" : [ {
+    "id" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+    "name" : "bill_type",
+    "builtin" : false,
+    "role" : null
+  }, {
+    "id" : "535a8110-2ea7-414f-a024-cf928b076d17",
+    "name" : "amount_of_money",
+    "builtin" : true,
+    "role" : null
+  } ],
+  "expressions" : [ {
+    "body" : "Vendor is Tikona",
+    "id" : "56dff4db-3ada-4c8a-8c31-0ce6aeef87f3",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "landline"
+    } ]
+  }, {
+    "body" : "Vendor is Reliance Communications",
+    "id" : "56dff4cd-50f4-413e-ad61-effc0858bcbf",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "landline"
+    } ]
+  }, {
+    "body" : "Vendor is Tata Teleservices(CDMA)",
+    "id" : "56dff4c1-2d2e-4a63-97f6-c5c1fa7c1e55",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "landline"
+    } ]
+  }, {
+    "body" : "Vendor is MTNL Delhi",
+    "id" : "56dff4b7-7861-470f-9899-fbb43727128f",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "landline"
+    } ]
+  }, {
+    "body" : "Vendor is Airtel Landline",
+    "id" : "56dff4ad-73a5-475d-97a9-1173ef788381",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "landline"
+    } ]
+  }, {
+    "body" : "Vendor is Birla Sun Life Insurance",
+    "id" : "56dff463-44df-4b53-b0f9-e0da7e1e0209",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "landline"
+    } ]
+  }, {
+    "body" : "Vendor is ICICI Prudential Life Insurance",
+    "id" : "56dff458-58f2-4988-9239-52086bdf43f2",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "landline"
+    } ]
+  }, {
+    "body" : "Vendor is Tata AIA Life Insurance",
+    "id" : "56dff44e-29dc-4a2b-8a87-a71653f0ae04",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "landline"
+    } ]
+  }, {
+    "body" : "Vendor is Gujarat Gas Company Limited",
+    "id" : "56dff404-c9a9-48ec-8de6-0a9f4a4e4d0f",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "gas"
+    } ]
+  }, {
+    "body" : "Vendor is Indraprastha Gas",
+    "id" : "56dff3fa-bb06-45ee-8550-6521e11a29df",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "gas"
+    } ]
+  }, {
+    "body" : "Vendor is Mahanagar Gas Limited",
+    "id" : "56dff3ef-1a1d-4b9c-b25c-0851644a6c04",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "gas"
+    } ]
+  }, {
+    "body" : "Vendor is Bangalore Water Supply(BWSSB)",
+    "id" : "56dff38b-a305-4147-8dca-b98c99a9dc12",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "water"
+    } ]
+  }, {
+    "body" : "Vendor is Jamshedpur Utilities & Services (JUSCO)",
+    "id" : "56dff1f7-e626-4e9b-9e08-98d57f103bdf",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is Bangalore Electricity Supply (BESCOM)",
+    "id" : "56dff1ab-38f1-443f-bf38-8da4a4e7409a",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is MP Paschim Vidyut Vitaran - INDORE",
+    "id" : "56dff1b8-26ad-455c-98a3-a3420f3deacb",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is Jaipur Vidyut Vitran Nigam Ltd",
+    "id" : "56dff19a-e7fc-49ac-8722-dd1c9d631c01",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is Noida Power Company Limited",
+    "id" : "56dff184-28be-4ad4-842d-d380f17be35e",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is BSES Rajdhani",
+    "id" : "56dfefda-acbe-4794-830f-2db61d0c9a17",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is BSES Yamuna",
+    "id" : "56dfefe2-fdc7-4afc-a288-9dc87bd9af4f",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is MSEB Mumbai",
+    "id" : "56dfefec-760e-476b-bc77-99e235d1a076",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is Tata Power Delhi Distribution Ltd",
+    "id" : "56dfeffe-bc06-4213-8d95-52789714813c",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is BEST",
+    "id" : "56dff03b-7770-424d-8f2e-d738077338b2",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is Chhattisgarh Electricity Board",
+    "id" : "56dff059-b3cd-477d-980e-d141868cf62a",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is Reliance Energy Mumbai",
+    "id" : "56dfef90-bd78-4b43-aa11-77f14cfc056a",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Vendor is Airtel DTH",
+    "id" : "56dfeef9-bd43-40f2-abb7-61c076a55361",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "Vendor is Sun Direct",
+    "id" : "56dfeaf9-db7e-4bdc-abfe-3447a0f383bc",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 10,
+      "end" : 20,
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "Vendor is Videocon D2H",
+    "id" : "56dfead4-9d6c-426e-9b42-a0457437c122",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "Vendor is Reliance Big TV",
+    "id" : "56dfeaa9-20b1-4f81-bd95-2e2706abd6f4",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "Vendor is Tata Sky",
+    "id" : "56dfea05-845e-42fe-8842-44661702aa16",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "DTH bill payment",
+    "id" : "56d02881-b059-4fef-9803-7a75a22f9631",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 0,
+      "end" : 3,
+      "value" : "DTH"
+    } ]
+  }, {
+    "body" : "Pay 500",
+    "id" : "56de7123-4ef9-4b83-bb51-dd07de9eb23f",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 4,
+      "end" : 7,
+      "value" : "500"
+    } ]
+  }, {
+    "body" : "Amount- 100",
+    "id" : "56de711f-273a-46ec-8e6c-55e6e875ebd2",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 8,
+      "end" : 11,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "Amount: 100",
+    "id" : "56de7117-0088-4f2e-90ae-dc769da5cd45",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 8,
+      "end" : 11,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "Rs 100/-",
+    "id" : "56de7111-beb2-4f7f-9c2a-ef912120423a",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 3,
+      "end" : 6,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "100/-",
+    "id" : "568e0601-65dd-4941-b250-2fcf6c74dc29",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 3,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "Pay bills",
+    "id" : "56d2e594-e00f-405d-a2f1-5e0e67bb95d9"
+  }, {
+    "body" : "insurance payment to be done",
+    "id" : "56d03801-ef05-448e-9919-553b55ece979",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 0,
+      "end" : 9,
+      "value" : "insurance"
+    } ]
+  }, {
+    "body" : "How to pay insurance?",
+    "id" : "56d03778-d1df-4090-8d89-ba7f30c59308",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "insurance"
+    } ]
+  }, {
+    "body" : "Insurance premium pay",
+    "id" : "56d02e98-e8a8-495c-9c1a-39dee0132a43",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "insurance"
+    } ]
+  }, {
+    "body" : "Insurance payment",
+    "id" : "56d02e8f-5207-495b-950b-8ce69f9ec3c5",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "insurance"
+    } ]
+  }, {
+    "body" : "Dish tv bill pay",
+    "id" : "56d02923-9ab1-46b3-8931-4b2665c69b0f",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "Can I pay DTH bill",
+    "id" : "56d028d7-d3db-424e-acd5-1a71801588d0",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "How to pay DTH bill payment",
+    "id" : "56d0288b-4d0c-4f51-9922-195378367ab9",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 11,
+      "end" : 14,
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "DISH bill pay",
+    "id" : "56d0292a-f544-45f0-bbf1-6ae9800a3e26",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 0,
+      "end" : 4,
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "water bill",
+    "id" : "56d023b4-2193-4e2a-9863-84292ba2aca6",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "water"
+    } ]
+  }, {
+    "body" : "want to pay water bill",
+    "id" : "56d025b4-3a64-4eee-8724-977709045841",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 12,
+      "end" : 17,
+      "value" : "water"
+    } ]
+  }, {
+    "body" : "Can I pay water bill",
+    "id" : "56d025a0-18c5-4938-b0b9-9a5fbe8a554b",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "water"
+    } ]
+  }, {
+    "body" : "How to do water bill pay",
+    "id" : "56d025aa-10e3-430b-8621-cef48fc07907",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 10,
+      "end" : 15,
+      "value" : "water"
+    } ]
+  }, {
+    "body" : "pay utility bills",
+    "id" : "56b8b1c3-1aa0-47ba-a658-4750575ea0a3"
+  }, {
+    "body" : "Can I pay electricity bill",
+    "id" : "56d023ee-0190-4367-84c3-01fa5e2bfc90",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 10,
+      "end" : 21,
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "I want to pay electricity bill",
+    "id" : "56d023e6-e315-4be7-9978-6ab16e0ec1d4",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 14,
+      "end" : 25,
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "water",
+    "id" : "56be395d-0f96-4497-a33b-a02d33abccca",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "water"
+    } ]
+  }, {
+    "body" : "Electric bill",
+    "id" : "56d02121-d7d3-4c13-a043-6777673d951c",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Pay electricity",
+    "id" : "56d02117-7968-4206-9dd4-f78cca369ed9",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Electicity",
+    "id" : "56d020ba-ed8f-4729-88e2-24b1d3e464c2",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Electricity",
+    "id" : "56d0209e-3cea-435d-a067-b41322c057b7",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "250.50rs",
+    "id" : "56bc5e67-0d50-4cf7-8fc9-b4616597442f",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 6,
+      "value" : "250.50"
+    } ]
+  }, {
+    "body" : "Rs. 250.50",
+    "id" : "56bc5e61-70b8-4689-8f49-3dac6570fc4f",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 4,
+      "end" : 10,
+      "value" : "250.50"
+    } ]
+  }, {
+    "body" : "Rs. 1000.00",
+    "id" : "56bc5e5b-51c1-4b8f-93a7-4e456f655681",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 4,
+      "end" : 11,
+      "value" : "1000.00"
+    } ]
+  }, {
+    "body" : "1000.00",
+    "id" : "56bc5e54-e31f-4465-a2f2-c1aafa9f51e4",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 0,
+      "end" : 7,
+      "value" : "1000.00"
+    } ]
+  }, {
+    "body" : "pay gas bill",
+    "id" : "56b97d67-ee75-442c-a474-91305c7c6023",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 4,
+      "end" : 7,
+      "value" : "gas"
+    } ]
+  }, {
+    "body" : "utility bills",
+    "id" : "56b8b1c6-58de-4e74-b4c9-e371030864c7"
+  }, {
+    "body" : "pay insurance",
+    "id" : "56b8aa26-f85b-4e5a-a559-b1b2d56be1c8",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 4,
+      "end" : 13,
+      "value" : "insurance"
+    } ]
+  }, {
+    "body" : "rs 1000",
+    "id" : "568e1eb6-59af-4e8a-9393-f9ccd7fc5b00",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 3,
+      "end" : 7,
+      "value" : "1000"
+    } ]
+  }, {
+    "body" : "for rs 100",
+    "id" : "567a6d57-b5bf-42ed-a413-6b0fa3b0b48d",
+    "entities" : [ {
+      "wisp" : "535a8110-2ea7-414f-a024-cf928b076d17",
+      "start" : 7,
+      "end" : 10,
+      "value" : "100"
+    } ]
+  }, {
+    "body" : "pay my dth bill",
+    "id" : "56b866e5-c47f-48ab-a5bd-d8ba2dde9fc2",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 7,
+      "end" : 10,
+      "value" : "dth"
+    } ]
+  }, {
+    "body" : "pay electricity bill",
+    "id" : "56b86440-dbc4-4f36-b8a9-b77e9b15a704",
+    "entities" : [ {
+      "wisp" : "56b86490-3746-4d43-9a7e-5615cc20ae80",
+      "start" : 4,
+      "end" : 15,
+      "value" : "electricity"
+    } ]
+  }, {
+    "body" : "Pay my bills",
+    "id" : "56b86438-f71c-49ee-8a36-19bab99805b9"
+  } ]
+}

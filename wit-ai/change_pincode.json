@@ -1,0 +1,158 @@
+{
+  "id" : "f26927c4-f31e-410d-b05c-fe0ef05e8ecb",
+  "name" : "change_pincode",
+  "doc" : "",
+  "meta" : {
+    "states" : [ "food", "prescription", "beauty", "grocery" ]
+  },
+  "entities" : [ {
+    "id" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+    "name" : "number",
+    "builtin" : true,
+    "role" : "pincode"
+  } ],
+  "expressions" : [ {
+    "body" : "Pin: 560088",
+    "id" : "56de6b0e-3509-4d9e-bbfa-405fd3aeddf8",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 5,
+      "end" : 11,
+      "value" : "560088",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "560-071",
+    "id" : "56de6991-6ca0-429c-bbb8-0cb838d996a4",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 0,
+      "end" : 7,
+      "value" : "560-071",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "pincode is 369856",
+    "id" : "56d68adb-999b-4bd5-9591-8ec4d2e98fa3",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 11,
+      "end" : 17,
+      "value" : "369856",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "pincode is 173452",
+    "id" : "56d5cb53-012f-49c2-9251-03a5ed7e86c0",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 11,
+      "end" : 17,
+      "value" : "173452",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "my pincode is 560083",
+    "id" : "56d542a0-e04e-4920-9a2e-44c6e840afe2",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 14,
+      "end" : 20,
+      "value" : "560083",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "pincode is 506103",
+    "id" : "56b98375-42ba-43e7-9504-33b6cc92a925",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 11,
+      "end" : 17,
+      "value" : "506103",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "pincode",
+    "id" : "56d5cb65-3b95-43fa-8423-75043a7e31a8"
+  }, {
+    "body" : "pincode is 426851",
+    "id" : "56d5caf4-1422-4f9d-9e5f-669a45daf01d",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 11,
+      "end" : 17,
+      "value" : "426851",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "Pincode 560032",
+    "id" : "56d55003-be64-4b0a-a437-9c23065282c4",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 8,
+      "end" : 14,
+      "value" : "560032",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "pincode 765001",
+    "id" : "56d542ff-41af-4b04-ad6b-de0b2a935812",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 8,
+      "end" : 14,
+      "value" : "765001",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "my pincode 560073",
+    "id" : "56d542c5-90c6-49c0-ae9b-b42ccb90258a",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 11,
+      "end" : 17,
+      "value" : "560073",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "pincode 560023",
+    "id" : "56d542b0-da4a-4ce9-a3d2-1cecd8199c0c",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 8,
+      "end" : 14,
+      "value" : "560023",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "for pincode 756003",
+    "id" : "56c30cab-3727-4cbb-b3d4-4a378cfe9c9a",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 12,
+      "end" : 18,
+      "value" : "756003",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "Pincode is 560091",
+    "id" : "56c30c2b-1188-4fce-92c5-8f7d8cc33420",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 11,
+      "end" : 17,
+      "value" : "560091",
+      "role" : "pincode"
+    } ]
+  }, {
+    "body" : "560095",
+    "id" : "56c30c1d-f984-43b1-b63a-931ae855c668",
+    "entities" : [ {
+      "wisp" : "535a80e2-6fc8-4991-b707-50dd0c862dfb",
+      "start" : 0,
+      "end" : 6,
+      "value" : "560095",
+      "role" : "pincode"
+    } ]
+  } ]
+}
