@@ -1,10 +1,9 @@
 
 import json
+
 from pprint import pprint
 
 
-
-labels = ['beauty', 'bills','recharge']
 
 
 def extract_wit_ai_data (labels, PREFIX = '../wit-ai/'):
@@ -18,9 +17,12 @@ def extract_wit_ai_data (labels, PREFIX = '../wit-ai/'):
 			eid2name = {}
 
 			data = json.load(f)
+			pprint(data)
+			
 			entities = data['entities']
 			exprs = data['expressions']
 
+			# if no entities, then examples are useless
 			if len(entities) == 0 : continue
 
 			for e in entities:
@@ -34,7 +36,7 @@ def extract_wit_ai_data (labels, PREFIX = '../wit-ai/'):
 				try:
 					ex_ents = ex['entities']
 					for ex_ent in ex_ents:
-						ex_ent['tagname'] = eid2name[ ex_ent[u'wisp']]
+						ex_ent['entity'] = eid2name[ ex_ent[u'wisp']]
 						ex_ent.pop( 'wisp', None)
 
 					new_exprs.append ( { 
@@ -49,7 +51,3 @@ def extract_wit_ai_data (labels, PREFIX = '../wit-ai/'):
 			return label2exprs
 
 
-label2exprs = extract_wit_ai_data(labels)
-
-
-pprint (label2exprs)
