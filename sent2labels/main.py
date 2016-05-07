@@ -102,18 +102,25 @@ def build_loss_optimizer (outputs, targets, size, is_training = True):
 
     return train_op, loss
 
-def train (train_op, loss, X, Y, config):
+def train (train_op, loss, config):
     init = tf.initialize_all_variables()
 
     with tf.Session() as sess:
         sess.run(init)
         #saver = tf.train.Saver(tf.all_variables())
+        gen = data_utils.get_all_data()
 
-        for e in range(config.num_epochs):
+        #for e in range(config.num_epochs):
+        while True:
             #sess.run(tf.assign(model.lr, args.learning_rate * (args.decay_rate ** e)))
-            batch_x, batch_y = data_utils.get_next_batch (X, Y, batch_size)
+            try:
+                batch_x, batch_y = data_utils.get_next_batch (gen, batch_size)
+            except:
+                break
+
             feed_dict = {
-                x: batch_x, y: batch_y
+                _inputs: batch_x, 
+                _targets: batch_y
             }
 
             _, loss,  = sess.run ([train_op, loss], feed_dict)
@@ -129,9 +136,9 @@ outputs, state = build_model (_inputs, config, is_training = True)
 
 train_op, loss = build_loss_optimizer (outputs, _targets, n_hidden)
 
-X, Y = data_utils.get_all_data()
+#X, Y = data_utils.get_all_data()
 
-train(train_op, loss, X, Y, config)
+train(train_op, loss, config)
 
 
 

@@ -157,6 +157,8 @@ def sent_to_token_ids (sentence, vocabulary, normalize_digits=True):
 
 def get_all_data():
     X, Y = get_X_Y_data ()
+    max_sent_len = max([len(s) for s in X])
+
     X_num = []
     Y_num = []
     #print zip(X, Y)
@@ -171,13 +173,28 @@ def get_all_data():
         X_num.append(x_toks)
         Y_num.append(y_toks)
 
-    return X_num, Y_num
+    gen = ( z for z in zip(X_num, Y_num) )
+    return gen, max_sent_len
+    #return X_num, Y_num
 
-def get_next_batch (X, Y, batch_size):
-    for x, y in zip(X, Y):
-        yield x, y
-        
-get_all_data()
+def get_next_batch (gen, batch_size):
+    return next(gen)
+
+gen, max_sent_len = get_all_data()
+
+print max_sent_len
+
+'''
+
+while True:
+    #sess.run(tf.assign(model.lr, args.learning_rate * (args.decay_rate ** e)))
+    
+    try:
+        z = get_next_batch (gen, 1)
+        print z
+    except:
+        break
+'''
 
 
 
