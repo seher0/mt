@@ -22,6 +22,7 @@ with variable_scope.variable_scope(scope or "embedding_rnn_seq2seq"):
 
 
 '''
+'''
 
 # max length of sentences
 num_steps = n_steps = seq_length = 5
@@ -29,7 +30,7 @@ num_steps = n_steps = seq_length = 5
 batch_size = 1
 
 # number of symbols used in sentences
-vocab_size = 7
+#vocab_size = 7
 #encoding the symbols into 50 dim vectors
 embedding_dim = 50
 
@@ -42,103 +43,162 @@ n_input = 1
 # num of putput labels
 num_tag_labels = 10
 
+'''
+
+class Sent2Labels ():
+    def __init__ (self, config):
+        self.num_steps = config.num_steps
+        self.batch_size = config.batch_size
+        self.embedding_dim = config.embedding_dim
+        self.n_hidden = config.n_hidden
+        self.num_tag_labels = config.num_tag_labels
+        self.vocab_size = config.vocab_size
+        self.config = config
+
+        self._inputs = tf.placeholder(tf.int32, [self.batch_size, self.num_steps])
+        self._targets = tf.placeholder(tf.int32, [self.batch_size, self.num_steps])
 
 
-_inputs = tf.placeholder(tf.int32, [batch_size, n_steps])
-_targets = tf.placeholder(tf.int32, [batch_size, n_steps])
+    def build_model (self, is_training=True):
+        batch_size = self.batch_size
+        n_steps = self.num_steps
+        size = self.n_hidden
+        config = self.config
 
-def build_model (inputs, config, is_training=True):
-    size = n_hidden
 
-    lstm_cell = tf.nn.rnn_cell.BasicLSTMCell(size, forget_bias=1.0)
 
-    # add dropout to output
-    if is_training and config.keep_prob < 1:
-      lstm_cell = tf.nn.rnn_cell.DropoutWrapper(
-          lstm_cell, output_keep_prob=config.keep_prob)
+        lstm_cell = tf.nn.rnn_cell.BasicLSTMCell(size, forget_bias=1.0)
+
+        
+        # add dropout to output
+        if is_training and config.keep_prob < 1:
+          lstm_cell = tf.nn.rnn_cell.DropoutWrapper(
+              lstm_cell, output_keep_prob=config.keep_prob)
+        
+
+        #cell = tf.nn.rnn_cell.MultiRNNCell([lstm_cell] * config.num_layers)
+        cell = lstm_cell
+
+        initial_state = cell.zero_state(batch_size, tf.float32)
+
+        with tf.device("/cpu:0"):
+          embedding = tf.get_variable("embedding", [vocab_size, size])
+          inputs = tf.nn.embedding_lookup(embedding, self._inputs)
+
+        
+        if is_training and config.keep_prob < 1:
+          inputs = tf.nn.dropout(inputs, config.keep_prob)
+        
+
+        # Build RNN
+        inputs = [tf.squeeze(input_, [1])   for input_ in tf.split(1, n_steps, inputs)]
+        outputs, state = rnn.rnn(cell, inputs, initial_state=initial_state)
+
+        self.outputs = outputs
+        self.final_state = state
+
+        return outputs, state
+
+
+    def build_loss_optimizer (self, outputs, is_training = True):
+
+        batch_size = self.batch_size
+        num_steps = self.num_steps
+        num_tag_labels = self.num_tag_labels
+        size = self.n_hidden
+        config = self.config
+
+
+        output = tf.reshape(tf.concat(1, outputs), [-1, size])
+        softmax_w = tf.get_variable("softmax_w", [size, num_tag_labels])
+        softmax_b = tf.get_variable("softmax_b", [num_tag_labels])
+        logits = tf.matmul(output, softmax_w) + softmax_b
+        lossf = tf.nn.seq2seq.sequence_loss_by_example(
+            [logits],
+            [tf.reshape(self._targets, [-1])],
+            [tf.ones([batch_size * num_steps])])
+        
+        self.loss = tf.reduce_sum(lossf) / batch_size
+
+
+
+        if not is_training:
+          return
+
+        #learning_rate = tf.Variable(float(0.01), trainable=False)
+        lr = tf.Variable(0.01, trainable=False)
+        tvars = tf.trainable_variables()
+        grads, _ = tf.clip_by_global_norm(tf.gradients(self.loss, tvars),
+                                          config.max_grad_norm)
+        optimizer = tf.train.GradientDescentOptimizer(lr)
+        self.train_op = optimizer.apply_gradients(zip(grads, tvars))
+        #self.train_op = tf.train.GradientDescentOptimizer(learning_rate).minimize(self.loss)
+
+        # train_op = optimizer.minimize(cost)
+
+        return self.train_op, self.loss
+
+    def train (self, sess):
+       
+        #saver = tf.train.Saver(tf.all_variables())
+
+        for m in range(5):
+
+            e = 0
+            data_gen, _, _ = data_utils.get_all_data()
+            while True:
+                e += 1
+
+                #sess.run(tf.assign(model.lr, args.learning_rate * (args.decay_rate ** e)))
+                try:
+                    batch_x, batch_y = data_utils.get_next_batch (data_gen, self.batch_size)
+                    batch_x = np.array([batch_x])
+                    batch_y = np.array([batch_y])
+
+                    #print batch_x, batch_y.shape
+
+                except:
+                    print 'breaking..'
+                    break
+
+                feed_dict = {
+                    self._inputs: batch_x, 
+                    self._targets: batch_y
+                }
+
+                _, loss  = sess.run ([self.train_op, self.loss], feed_dict)
+
+             
+                print ('iteration %d.%d, loss %f' % (m,e,loss) )
+
+
+config = edict({'keep_prob': 0.5, 'num_layers': 1, 'max_grad_norm': 5, 'num_epochs': 100,
+    'num_steps': -1, 
+    'vocab_size': -1, 
+    'batch_size': 1, 
+    'embedding_dim': 50, 
+    'n_hidden': 100, 
+    'num_tag_labels': 10
+
+    })
+
+gen, max_sent_len, vocab_size = data_utils.get_all_data()
+config.num_steps = max_sent_len
+config.vocab_size = vocab_size
+
+
+with tf.Graph().as_default():
+    model = Sent2Labels (config)
+
+    _, _ = model.build_model (is_training = True)
     
-    #cell = tf.nn.rnn_cell.MultiRNNCell([lstm_cell] * config.num_layers)
-    cell = lstm_cell
+    train_op, loss = model.build_loss_optimizer (model.outputs)
 
-    initial_state = cell.zero_state(batch_size, tf.float32)
-
-    with tf.device("/cpu:0"):
-      embedding = tf.get_variable("embedding", [vocab_size, size])
-      inputs = tf.nn.embedding_lookup(embedding, inputs)
-
-    if is_training and config.keep_prob < 1:
-      inputs = tf.nn.dropout(inputs, config.keep_prob)
-
-
-    # Build RNN
-    inputs = [tf.squeeze(input_, [1])   for input_ in tf.split(1, num_steps, inputs)]
-    outputs, state = rnn.rnn(cell, inputs, initial_state=initial_state)
-
-    return outputs, state
-
-
-def build_loss_optimizer (outputs, targets, size, is_training = True):
-    output = tf.reshape(tf.concat(1, outputs), [-1, size])
-    softmax_w = tf.get_variable("softmax_w", [size, num_tag_labels])
-    softmax_b = tf.get_variable("softmax_b", [num_tag_labels])
-    logits = tf.matmul(output, softmax_w) + softmax_b
-    loss = tf.nn.seq2seq.sequence_loss_by_example(
-        [logits],
-        [tf.reshape(_targets, [-1])],
-        [tf.ones([batch_size * num_steps])])
-    cost = tf.reduce_sum(loss) / batch_size
-
-    if not is_training:
-      return
-
-    lr = tf.Variable(0.0, trainable=False)
-    tvars = tf.trainable_variables()
-    grads, _ = tf.clip_by_global_norm(tf.gradients(cost, tvars),
-                                      config.max_grad_norm)
-    optimizer = tf.train.GradientDescentOptimizer(lr)
-    train_op = optimizer.apply_gradients(zip(grads, tvars))
-
-    # train_op = optimizer.minimize(cost)
-
-    return train_op, loss
-
-def train (train_op, loss, config):
     init = tf.initialize_all_variables()
 
-    with tf.Session() as sess:
-        sess.run(init)
-        #saver = tf.train.Saver(tf.all_variables())
-        gen = data_utils.get_all_data()
-
-        #for e in range(config.num_epochs):
-        while True:
-            #sess.run(tf.assign(model.lr, args.learning_rate * (args.decay_rate ** e)))
-            try:
-                batch_x, batch_y = data_utils.get_next_batch (gen, batch_size)
-            except:
-                break
-
-            feed_dict = {
-                _inputs: batch_x, 
-                _targets: batch_y
-            }
-
-            _, loss,  = sess.run ([train_op, loss], feed_dict)
-
-            print ('epoch ', e)
-            print ('loss ', loss)
-
-
-config = edict({'keep_prob': 0.5, 'num_layers': 1, 'max_grad_norm': 5, 'num_epochs': 100})
-
-
-outputs, state = build_model (_inputs, config, is_training = True)
-
-train_op, loss = build_loss_optimizer (outputs, _targets, n_hidden)
-
-#X, Y = data_utils.get_all_data()
-
-train(train_op, loss, config)
+    with tf.Session() as session:
+        session.run(init)
+        model.train(session)
 
 
 

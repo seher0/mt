@@ -148,41 +148,55 @@ def make_vocab (word_lists, max_vocabulary_size=100000, normalize_digits=True):
 
     return vocab, rev_vocab
 
-def sent_to_token_ids (sentence, vocabulary, normalize_digits=True):
+def sent_to_token_ids (sentence, vocabulary, pad_to = None, normalize_digits=True):
     if not normalize_digits:
-        return [vocabulary.get(w, UNK_ID) for w in sentence]
+        ret = [vocabulary.get(w, UNK_ID) for w in sentence]
     # Normalize digits by 0 before looking words up in the vocabulary.
-    return [vocabulary.get(re.sub(_DIGIT_RE, b"0", w), UNK_ID) for w in sentence]
+    ret = [vocabulary.get(re.sub(_DIGIT_RE, b"0", w), UNK_ID) for w in sentence]
 
+    if pad_to:
+        pad_len = pad_to - len(ret)
+        ret = ret + [PAD_ID] * pad_len
+    return ret
 
 def get_all_data():
     X, Y = get_X_Y_data ()
+
+    sent_lens = {}
+    for s in X:
+        slen = len(s)
+        if not slen in sent_lens:
+            sent_lens[slen] = 0
+        sent_lens[slen] = sent_lens[slen] + 1
+
     max_sent_len = max([len(s) for s in X])
+
+    print max_sent_len, sent_lens
+
 
     X_num = []
     Y_num = []
     #print zip(X, Y)
 
     vocab, rev_vocab = make_vocab (X + Y)
-    #print vocab
+    print vocab
 
 
     for x, y in zip(X, Y):
-        x_toks = sent_to_token_ids(x, vocab)
-        y_toks = sent_to_token_ids(y, vocab)
+        x_toks = sent_to_token_ids(x, vocab, pad_to = max_sent_len)
+        y_toks = sent_to_token_ids(y, vocab, pad_to = max_sent_len)
         X_num.append(x_toks)
         Y_num.append(y_toks)
 
     gen = ( z for z in zip(X_num, Y_num) )
-    return gen, max_sent_len
+    return gen, max_sent_len, len(vocab)
     #return X_num, Y_num
 
 def get_next_batch (gen, batch_size):
     return next(gen)
 
-gen, max_sent_len = get_all_data()
+gen, _, _ = get_all_data()
 
-print max_sent_len
 
 '''
 
