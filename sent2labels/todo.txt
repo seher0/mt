@@ -1,0 +1,12 @@
+buckets + add weights for ignoring pad ids for each bucket
+
+dump label_vocab.json - print transformed output
+
+model changes - birnn, 
+
+
+
+use word2vec/glove embedding to initialize
+
+
+(D)correct output vocabulary: only num_tag_labels + 4 beginning symbols

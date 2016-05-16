@@ -52,7 +52,7 @@ def get_linear_tags (label2exprs):
                         curr_token = curr_token + c
                         i += 1
 
-            print text, tokens
+            #print text, tokens
             label2tokens[label].append({'text': text, 'tokens': tokens})
 
     return label2tokens
@@ -178,24 +178,26 @@ def get_all_data():
     Y_num = []
     #print zip(X, Y)
 
-    vocab, rev_vocab = make_vocab (X + Y)
+    vocab, rev_vocab = make_vocab (X)
+    label_vocab, _ = make_vocab (Y)
     print vocab
+    print label_vocab
 
 
     for x, y in zip(X, Y):
         x_toks = sent_to_token_ids(x, vocab, pad_to = max_sent_len)
-        y_toks = sent_to_token_ids(y, vocab, pad_to = max_sent_len)
+        y_toks = sent_to_token_ids(y, label_vocab, pad_to = max_sent_len)
         X_num.append(x_toks)
         Y_num.append(y_toks)
 
     gen = ( z for z in zip(X_num, Y_num) )
-    return gen, max_sent_len, len(vocab)
+    return gen, max_sent_len, vocab, label_vocab
     #return X_num, Y_num
 
 def get_next_batch (gen, batch_size):
     return next(gen)
 
-gen, _, _ = get_all_data()
+#gen, _, _ = get_all_data()
 
 
 '''
