@@ -1,0 +1,110 @@
+{
+  "id": "4c453f9e-51a9-4179-9d41-086c0ae5f319",
+  "name": "Cancel order/Status track",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "id": "809d9da4-bba2-4cf5-8af5-68c90c28d17b",
+      "data": [
+        {
+          "text": "Cancel order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b9230008-92d4-4f0d-80ce-8dc74a4bf7dc",
+      "data": [
+        {
+          "text": "Cancellation of order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e7beb979-28f8-4d46-9246-9fd5e47567d6",
+      "data": [
+        {
+          "text": "How to cancel orders"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6e930b27-5678-4a77-9f51-90e58afd7b02",
+      "data": [
+        {
+          "text": "How do I track the order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ec6bde9a-ac82-408a-b692-9792d1f2d50d",
+      "data": [
+        {
+          "text": "Can I track the order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e78ea362-897e-4f95-9f6f-4d992c7690ce",
+      "data": [
+        {
+          "text": "Where do I cancel the order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "609f33f9-35c2-4236-bd62-4232e8efabbb",
+      "data": [
+        {
+          "text": "What is the status of my order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4bb6602a-5c14-46f3-9a72-5ce1f03f12e9",
+      "data": [
+        {
+          "text": "I did not get what I ordered"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a3129c06-be2e-4ef2-9804-3fa0458f3adf",
+      "data": [
+        {
+          "text": "Where is my order"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Order_screen",
+      "affectedContexts": [],
+      "parameters": [],
+      "speech": "Please check the order history screen  to contact the vendor/service provider.  You can also provide feedback by sending us email on help@magictiger.com"
+    }
+  ],
+  "state": "LOADED",
+  "priority": 500000,
+  "webhookUsed": false
+}

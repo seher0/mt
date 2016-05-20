@@ -5,44 +5,114 @@
   "contexts": [],
   "userSays": [
     {
+      "id": "34737436-d419-49cd-b520-906cb2e03b42",
       "data": [
         {
           "text": "Order prescription medicine"
         }
       ],
-      "isTemplate": true
+      "isTemplate": true,
+      "count": 0
     },
     {
+      "id": "e90da0ad-7ab3-4cab-9fbd-3f2f2e5738c0",
       "data": [
         {
           "text": "Order medicine"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "2c69f48c-9c97-4c18-a213-7d60e3a2e87c",
       "data": [
         {
           "text": "I want medicines for my prescription"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "354ea8f9-b034-4c04-be9b-c7f6043081be",
       "data": [
         {
           "text": "How to order medicine"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "01445b09-293e-4e86-a3b7-6ce7a21b524a",
       "data": [
         {
           "text": "You deliver medicine"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "48005b11-1fdd-4fcc-8db8-080aa1d5f7cc",
+      "data": [
+        {
+          "text": "Order prescription medications"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3cd8b088-ba55-4c64-b6a7-accc3ec84a10",
+      "data": [
+        {
+          "text": "medications"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0ceda574-e96a-41af-a077-3f5a3f68b44c",
+      "data": [
+        {
+          "text": "do you deliver medications"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "549e6c27-9426-4111-91a0-48aa55ac2c20",
+      "data": [
+        {
+          "text": "How to order any medications"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "270355cb-5bc4-4c3e-8e9c-41a8e793bbdd",
+      "data": [
+        {
+          "text": "Order Prescription Medications"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3ad75f5c-9aff-4b9c-8ea7-13faa573bd8b",
+      "data": [
+        {
+          "text": "Medications"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
     }
   ],
   "responses": [
@@ -54,7 +124,7 @@
       "speech": []
     }
   ],
-  "state": "LEARNED",
+  "state": "LOADED",
   "priority": 500000,
   "webhookUsed": false
 }

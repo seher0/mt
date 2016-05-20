@@ -7,7 +7,7 @@ from tensorflow.python.framework import dtypes
 import data_utils
 
 
-class Sent2Labels ():
+class ElmanRNN ():
     def __init__ (self, config):
         self.num_steps = config.num_steps
         self.batch_size = config.batch_size
@@ -56,9 +56,9 @@ class Sent2Labels ():
         outputs, state = rnn.rnn(cell, inputs, initial_state=initial_state)
 
         self.outputs = outputs
-        self.final_state = state
+        #self.final_state = state
 
-        return outputs, state
+        return outputs
 
 
     def build_loss_optimizer (self, outputs, is_training = True):
@@ -85,13 +85,17 @@ class Sent2Labels ():
         
         self.loss = tf.reduce_sum(lossf) / batch_size
 
-
+        # Evaluate model
+        '''
+        correct_pred = tf.equal(tf.argmax(pred,1), tf.argmax(y,1))
+        accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
+        '''
 
         if not is_training:
           return
 
         #learning_rate = tf.Variable(float(0.01), trainable=False)
-        lr = tf.Variable(0.01, trainable=False)
+        lr = tf.Variable(0.05, trainable=False)
         tvars = tf.trainable_variables()
         grads, _ = tf.clip_by_global_norm(tf.gradients(self.loss, tvars),
                                           config.max_grad_norm)
@@ -133,8 +137,8 @@ class Sent2Labels ():
 
                 _, loss  = sess.run ([self.train_op, self.loss], feed_dict)
 
-             
-                print ('iteration %d.%d, loss %f' % (m,e,loss) )
+                if e % 100 == 0:
+                    print ('iteration %d.%d, loss %f' % (m,e,loss) )
 
         saver.save(sess, checkpoint_path)
 

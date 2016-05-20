@@ -1,54 +1,54 @@
 {
-  "id": "33aa2c64-85a7-4e9e-8fcc-4650d6020bd7",
-  "name": "beauty",
+  "id": "c9f9bd4d-137b-49e4-b81a-611e65dbaf30",
+  "name": "bus",
   "auto": true,
   "contexts": [],
   "userSays": [
     {
-      "id": "883d325c-940a-452e-8604-29ef691169e0",
+      "id": "c7e193f4-6aa7-4fc7-b6dc-88d2f9dec665",
       "data": [
         {
-          "text": "Book beauty services"
+          "text": "I want to book bus tickets"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f02e32da-410e-42d7-968b-75eb99c93825",
+      "data": [
+        {
+          "text": "book bus ticket"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f2d72b05-c879-4cd0-8983-d1b2c5432aa9",
+      "data": [
+        {
+          "text": "bus ticket"
         }
       ],
       "isTemplate": true,
       "count": 0
     },
     {
-      "id": "f7021708-0649-43c2-9411-989decd9ad36",
+      "id": "3ddaffc2-d303-4138-b855-caa0ec056cae",
       "data": [
         {
-          "text": "I want to book beauty services"
+          "text": "book bus"
         }
       ],
       "isTemplate": false,
       "count": 0
     },
     {
-      "id": "0e44dcac-1d9b-4fa7-9934-2c6578204462",
+      "id": "701eef3b-f84f-4f75-b1a8-0cd198e2be5f",
       "data": [
         {
-          "text": "Book facial for me"
-        }
-      ],
-      "isTemplate": false,
-      "count": 0
-    },
-    {
-      "id": "643c53e9-c589-49cd-8b81-70b76e052862",
-      "data": [
-        {
-          "text": "How to book beauty services"
-        }
-      ],
-      "isTemplate": false,
-      "count": 0
-    },
-    {
-      "id": "9a80acb5-3531-4c16-9fcd-c0e431f87ee6",
-      "data": [
-        {
-          "text": "Book waxing service for me"
+          "text": "bus tickets"
         }
       ],
       "isTemplate": false,
@@ -58,13 +58,13 @@
   "responses": [
     {
       "resetContexts": false,
-      "action": "beauty",
+      "action": "bus_bot",
       "affectedContexts": [],
       "parameters": [],
       "speech": []
     }
   ],
-  "state": "LOADED",
+  "state": "LEARNED",
   "priority": 500000,
   "webhookUsed": false
 }

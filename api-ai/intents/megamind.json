@@ -5,20 +5,24 @@
   "contexts": [],
   "userSays": [
     {
+      "id": "d2cf2d65-40be-4bc8-a856-dfe14d035960",
       "data": [
         {
           "text": "talk to megamind"
         }
       ],
-      "isTemplate": true
+      "isTemplate": true,
+      "count": 0
     },
     {
+      "id": "f6c7706d-d65c-4dbe-87c8-1fd340813b31",
       "data": [
         {
           "text": "megamind"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     }
   ],
   "responses": [
@@ -29,7 +33,7 @@
       "speech": []
     }
   ],
-  "state": "LEARNED",
+  "state": "LOADED",
   "priority": 500000,
   "webhookUsed": false
 }

@@ -5,6 +5,7 @@
   "contexts": [],
   "userSays": [
     {
+      "id": "3bbbccf8-6da0-46f2-a382-8754bd118ccb",
       "data": [
         {
           "text": "Order "
@@ -15,9 +16,11 @@
           "userDefined": false
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "3c21f438-159c-4f55-850a-6ed4c3c868c6",
       "data": [
         {
           "text": "buy "
@@ -28,9 +31,11 @@
           "userDefined": false
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "8133e5fc-7943-4738-87b4-e6e7f54dd860",
       "data": [
         {
           "text": "order "
@@ -41,9 +46,11 @@
           "userDefined": false
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "3c7f54f1-432c-44a3-8a7e-81df55f43181",
       "data": [
         {
           "text": "How to order "
@@ -55,15 +62,18 @@
           "userDefined": false
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "fdee7542-b026-42df-a8c3-6b3f33e684ab",
       "data": [
         {
           "text": "Show me the list to buy grocery"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     }
   ],
   "responses": [
@@ -81,7 +91,7 @@
       "speech": []
     }
   ],
-  "state": "LEARNED",
+  "state": "LOADED",
   "priority": 500000,
   "webhookUsed": false
 }

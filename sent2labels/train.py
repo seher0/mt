@@ -42,7 +42,8 @@ num_tag_labels = 10
 
 '''
 
-from model_rnn import Sent2Labels
+from model_rnn import ElmanRNN
+from model_birnn import BiRNN
 
 
 config = edict({'keep_prob': 0.5, 'num_layers': 1, 'max_grad_norm': 5, 'num_epochs': 100,
@@ -62,9 +63,10 @@ config.label_vocab_size = len(label_vocab)
 
 
 with tf.Graph().as_default():
-    model = Sent2Labels (config)
+    model = ElmanRNN (config)
+    #model = BiRNN (config)
 
-    _, _ = model.build_model (is_training = True)
+    _ = model.build_model (is_training = True)
     
     train_op, loss = model.build_loss_optimizer (model.outputs)
 
@@ -80,6 +82,9 @@ with tf.Graph().as_default():
 
     with open('models/vocab.json', 'wb') as f:
         json.dump(vocab, f, indent=4 )
+
+    with open('models/label_vocab.json', 'wb') as f:
+        json.dump(label_vocab, f, indent=4 )
 
 
 

@@ -1,12 +1,38 @@
-buckets + add weights for ignoring pad ids for each bucket
 
-dump label_vocab.json - print transformed output
+add context window
 
-model changes - birnn, 
-
+predict confidence for predicted label seq
 
 
 use word2vec/glove embedding to initialize
+buckets + add weights for ignoring pad ids for each bucket
 
+
+================
+
+dump label_vocab.json - print transformed output
+
+model changes - birnn, (D - worse on tests, overfits? maybe needs early stopping)
 
 (D)correct output vocabulary: only num_tag_labels + 4 beginning symbols
+
+from http://deeplearning.net/tutorial/rnnslu.html
+def contextwin(l, win):
+    '''
+    win :: int corresponding to the size of the window
+    given a list of indexes composing a sentence
+
+    l :: array containing the word indexes
+
+    it will return a list of list of indexes corresponding
+    to context windows surrounding each word in the sentence
+    '''
+    assert (win % 2) == 1
+    assert win >= 1
+    l = list(l)
+
+    lpadded = win // 2 * [-1] + l + win // 2 * [-1]
+    out = [lpadded[i:(i + win)] for i in range(len(l))]
+
+    assert len(out) == len(l)
+    return out

@@ -5,6 +5,7 @@
   "contexts": [],
   "userSays": [
     {
+      "id": "b2a1baf0-a417-4f58-af28-20527865837c",
       "data": [
         {
           "text": "Who is "
@@ -15,9 +16,11 @@
           "userDefined": false
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "e6d09f0a-81cd-4597-9db9-f0297f5f08f7",
       "data": [
         {
           "text": "Who is "
@@ -28,7 +31,8 @@
           "userDefined": false
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     }
   ],
   "responses": [
@@ -39,7 +43,7 @@
       "speech": "Entrepreneur, Harley rider, Sith Lord"
     }
   ],
-  "state": "LEARNED",
+  "state": "LOADED",
   "priority": 500000,
   "webhookUsed": false
 }

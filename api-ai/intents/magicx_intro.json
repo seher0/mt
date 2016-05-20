@@ -5,92 +5,164 @@
   "contexts": [],
   "userSays": [
     {
+      "id": "2ad7aca8-bca1-47b7-bd89-8e4491f75929",
       "data": [
         {
           "text": "What is MagicX"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "2efcb3d2-262e-4c61-b193-d7676c9a8d93",
       "data": [
         {
           "text": "What is MagicTiger"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "e38241f2-3a74-4f6e-9a9a-90dc954c2527",
       "data": [
         {
           "text": "Where is MagicX"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "e60c6e49-5f19-487f-b506-d45d9c75d683",
       "data": [
         {
           "text": "Where is MagicTiger"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "b2538ddb-acd8-4717-9e22-737943c5f65f",
       "data": [
         {
           "text": "what can you do"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "adec45ec-c1a5-426e-84ce-99d2e8507903",
       "data": [
         {
           "text": "What can you help me with"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "738f9ced-18ac-4207-ad31-719987caee6d",
       "data": [
         {
           "text": "How can you help"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "5e84d60f-b7cf-4d58-a071-445e64c890d0",
       "data": [
         {
           "text": "What categories can you help with?"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "2f2abec7-e18f-4610-baff-357632f60404",
       "data": [
         {
           "text": "What do you do?"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "7568ca71-4e21-45cb-a83f-93bd43098103",
       "data": [
         {
           "text": "Who are you?"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "1f01da57-2950-465e-b405-e4c01fa2bdec",
       "data": [
         {
           "text": "What is magicx?"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b7aca241-82cb-4e4c-a385-aaf003a9372f",
+      "data": [
+        {
+          "text": "Tell me about yourself"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0ce5e223-ea16-4508-83c6-1753e3d29c45",
+      "data": [
+        {
+          "text": "What can you do"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "934e8801-32ad-4a29-926b-b9910335b82e",
+      "data": [
+        {
+          "text": "How to use this app"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "63153c43-a647-4644-8796-2d54be22d2b3",
+      "data": [
+        {
+          "text": "What is your name?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4aa44567-8ead-4cf6-84f7-ff9883b8c345",
+      "data": [
+        {
+          "text": "What is ur name?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
     }
   ],
   "responses": [
@@ -99,7 +171,7 @@
       "action": "magicx_intro",
       "affectedContexts": [],
       "parameters": [],
-      "speech": "MagicX makes your life easy \u0026 convenient. You no longer have to install multiple apps to get things done. You can recharge phone, pay bills, order grocery and prescription medicines.\nOh and you can also book events and experiences so that you don\u0027t miss out on anything exciting in your city!"
+      "speech": "MagicX makes your life easy \u0026 convenient. You no longer have to install multiple apps to get things done. You can recharge phone, pay bills, order grocery, book flight tickets and prescription medicines. Chat and order now."
     }
   ],
   "state": "LEARNED",

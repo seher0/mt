@@ -5,92 +5,154 @@
   "contexts": [],
   "userSays": [
     {
+      "id": "a0ea4646-2a17-46f6-b829-12d38b994d65",
       "data": [
         {
           "text": "How to use magic credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "29d0071a-0c9c-4a0f-beed-bfdbcd0260d5",
       "data": [
         {
           "text": "What is the use of magicx credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "48a95fdc-f2b5-4be0-93fd-127d5d4a7c51",
       "data": [
         {
           "text": "What is the use of magic credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "420a8f9c-7610-4a82-bf68-ff768d8965a9",
       "data": [
         {
           "text": "I dont know how to use magic credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "5b11a1ed-7a66-4ef4-b8ce-b06ca4430bab",
       "data": [
         {
           "text": "I want to use magic credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "aa17f419-e9d4-4260-aaf6-c82459704cd8",
       "data": [
         {
           "text": "Can i use magic credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "a6f852d9-6785-4bf5-b6fb-413b2e43d0ec",
       "data": [
         {
           "text": "What is magicx credit"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "4e0b18c1-d826-4490-b290-348439be2892",
       "data": [
         {
           "text": "What is the use of magic credit"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "1029c761-1b6a-4c36-a904-f1ab7be01aae",
       "data": [
         {
           "text": "Why magic credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "c42af6d5-b3c4-4281-8213-0e95b9a101cc",
       "data": [
         {
           "text": "I want to avail magic credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
     },
     {
+      "id": "2e124fa4-ff7a-446a-a0e1-0aa45da72ad3",
       "data": [
         {
           "text": "want to use credits"
         }
       ],
-      "isTemplate": false
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "392b6d81-6348-40cc-9e70-a7ec2bd3e3c6",
+      "data": [
+        {
+          "text": "Can I transfer magicX credits to paytm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "621e97e8-ead9-4641-be94-7312be86ab1b",
+      "data": [
+        {
+          "text": "magicX credits to paytm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "19274446-c65c-4fb1-b979-e04d687f93a1",
+      "data": [
+        {
+          "text": "magicx mushrooms to paytm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c828804d-db91-41a0-8e4e-f3bf7a726e22",
+      "data": [
+        {
+          "text": "MagicX money"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
     }
   ],
   "responses": [
@@ -99,10 +161,10 @@
       "action": "magicx_credits",
       "affectedContexts": [],
       "parameters": [],
-      "speech": "All magic credit cashbacks and sign up bonus can be availed at the time of payment for the order (Not applicable on COD). Corresponding amount will be deducted in your final payable amount. (1 Magic Credit \u003d Re. 1)"
+      "speech": "All magic credit cashbacks and sign up bonus can be availed at the time of payment for the order (Not applicable on COD). Corresponding amount will be deducted in your final payable amount. (1 Magic Credit \u003d Re. 1). This is non-transferable and can be used only on MagicX orders."
     }
   ],
-  "state": "LEARNED",
+  "state": "LOADED",
   "priority": 500000,
   "webhookUsed": false
 }

@@ -1,0 +1,149 @@
+{
+  "id": "095b4a15-3584-4096-acfa-40ab5894c8cc",
+  "name": "Gender and status",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "id": "6d77d7b1-7f5e-4bad-a6eb-cc7045af11b5",
+      "data": [
+        {
+          "text": "What is your gender"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "11648109-f39e-4eb4-94e6-128e2f9a68b0",
+      "data": [
+        {
+          "text": "Are you male"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5357a891-2503-47c4-a2af-77465e48c773",
+      "data": [
+        {
+          "text": "Are you female"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c90005f9-7a61-47ad-8f09-9f983b509ad0",
+      "data": [
+        {
+          "text": "Are you male or female"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e9170b43-1a5d-4f34-925c-0f97e80a8801",
+      "data": [
+        {
+          "text": "M/F?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "041717b9-7c38-4cb2-89a5-102a018d8414",
+      "data": [
+        {
+          "text": "Are you a girl"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "59e57fbc-de2c-45e5-8318-0c4f5563e122",
+      "data": [
+        {
+          "text": "Are you a guy"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5d58bbc0-8c6f-4a05-b246-34eba2fccde9",
+      "data": [
+        {
+          "text": "Are you a man or woman"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fd9c1ad5-2d20-46dc-ba1e-2368b6e4ef42",
+      "data": [
+        {
+          "text": "Man or Female"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "766c4419-4f07-458b-b654-414e48265a25",
+      "data": [
+        {
+          "text": "Male or Female"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d1c0cc50-9515-44e7-9d6a-684d7078e87a",
+      "data": [
+        {
+          "text": "Are you single"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8142272f-70e6-4a5e-9b2c-0df0fb83f118",
+      "data": [
+        {
+          "text": "Are you married"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "80b6a5ac-ed82-48e7-89fc-ae238b2c4cef",
+      "data": [
+        {
+          "text": "Are you single or married"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "speech": "All I can say is, I am smart, very fast and I understand you."
+    }
+  ],
+  "state": "LOADED",
+  "priority": 500000,
+  "webhookUsed": false
+}
