@@ -1,0 +1,4 @@
+bottle
+easydict
+numpy
+tensorflow == 0.8.0
