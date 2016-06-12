@@ -21,6 +21,25 @@ class ElmanRNN ():
         self._targets = tf.placeholder(tf.int32, [self.batch_size, self.num_steps])
 
 
+    def load_wordvectors (self, sess):
+
+        # with tf.device("/cpu:0"): -- needed?
+
+        W = tf.Variable(tf.constant(0.0, shape=[self.vocab_size, self.n_hidden]), name="embedding",
+                trainable=False)
+
+        self.embedding_placeholder = tf.placeholder(tf.float32, [self.vocab_size, self.n_hidden])
+        self.embedding_init = W.assign(embedding_placeholder)
+
+        '''
+        with open(fname,'rb') as f:
+            embedding = np.load(f)
+
+        '''
+
+
+        sess.run(self.embedding_init, feed_dict={self.embedding_placeholder: embedding})
+    
     def build_model (self, is_training=True):
         batch_size = self.batch_size
         n_steps = self.num_steps
@@ -44,6 +63,7 @@ class ElmanRNN ():
 
         with tf.device("/cpu:0"):
           embedding = tf.get_variable("embedding", [self.vocab_size, size])
+          #embedding = tf.get_variable("embedding_init", [self.vocab_size, size])
           inputs = tf.nn.embedding_lookup(embedding, self._inputs)
 
         

@@ -4,7 +4,8 @@ add context window
 predict confidence for predicted label seq
 
 
-use word2vec/glove embedding to initialize
+use word2vec/glove embedding to initialize 
+(older chats, wit/api texts, category specific wiki/etc texts)
 buckets + add weights for ignoring pad ids for each bucket
 
 
